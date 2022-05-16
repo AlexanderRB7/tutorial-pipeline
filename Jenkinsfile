@@ -8,10 +8,10 @@ pipeline {
         }
     }
     post {
-    failure {
+    success {
         mail to: 'alexanderborroto@rccl.com',
-             subject: "Failed Pipeline",
-             body: "Something is wrong"
+             subject: "Working Pipeline",
+             body: "Working as expected."
         }
     }
 }
